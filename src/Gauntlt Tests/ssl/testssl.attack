@@ -1,0 +1,79 @@
+@reallyslow
+Feature: Run testssl against a target
+
+Background:
+  Given "curl" is installed
+  And the following environment variables:
+    | name     | environment_variable_name |
+    | hostname | HOSTNAME |
+
+
+Scenario: Check for SSL vulnerabilities
+  When I launch a "curl" attack with:
+    """
+    ../../tests/ssl/ssl-vulns.sh <hostname>
+    """
+  Then the output should contain:
+    """
+    1\n
+    """
+
+Scenario: Check for soon to expire ssl certs
+  When I launch a "curl" attack with:
+    """
+    ../../tests/ssl/ssl-cert.sh <hostname>
+    """
+  Then the output should contain:
+    """
+    0\n
+    """
+
+Scenario: Ensure accepted SSLv3 Cipher Suites
+  When I launch an "sslyze" attack with:
+  """
+  sslyze --sslv3 --hide_rejected_ciphers <hostname>:443
+  """
+  Then the output should match:
+  """
+  Server rejected all cipher suites
+  """
+
+Scenario: Ensure accepted TLSv1 Cipher Suites
+  When I launch an "sslyze" attack with:
+  """
+  sslyze --tlsv1 --hide_rejected_ciphers <hostname>:443
+  """
+  Then the output should match:
+  """
+  Server rejected all cipher suites.
+  """
+
+Scenario: Ensure SSL Certificate is Trusted
+  When I launch an "sslyze" attack with:
+  """
+  sslyze --certinfo <hostname>:443
+  """
+  Then the output should match:
+  """
+  Certificate is trusted
+  """
+
+Scenario: Ensure Hostname Validation
+  When I launch an "sslyze" attack with:
+  """
+  sslyze --certinfo <hostname>:443
+  """
+  Then the output should match:
+  """
+  Certificate matches
+  """
+
+Scenario: Ensure rejected SSLv2 Cipher Suites
+  When I launch an "sslyze" attack with:
+  """
+  sslyze --sslv2 --hide_rejected_ciphers <hostname>:443
+  """
+  Then the output should match:
+  """
+  Server rejected all cipher suites
+  """

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+<version>2005000</version>
+<userDir/>
+<connection>
+		<proxyChain>
+			<hostName/>
+			<port>80</port>
+			
+			<realm/>
+			<userName/>
+			<password/>		
+			<prompt>false</prompt>
+		<enabled>false</enabled>
+</proxyChain>
+		<auth/>
+		<securityProtocolsEnabled>
+			<protocol>SSLv3</protocol>
+			<protocol>TLSv1</protocol>
+			<protocol>TLSv1.1</protocol>
+			<protocol>TLSv1.2</protocol>
+		</securityProtocolsEnabled>
+	<timeoutInSecs>20</timeoutInSecs>
+</connection>
+<proxy>
+		<ip>127.0.0.1</ip>
+		<port>60996</port>
+		<reverseProxy>
+			<use>0</use>	
+			<ip>localhost</ip>
+			<httpPort>80</httpPort>
+			<httpsPort>443</httpsPort>
+		</reverseProxy>		
+		<securityProtocolsEnabled>
+			<protocol>SSLv3</protocol>
+			<protocol>TLSv1</protocol>
+			<protocol>TLSv1.1</protocol>
+			<protocol>TLSv1.2</protocol>
+		</securityProtocolsEnabled>
+	<removeUnsupportedEncodings>true</removeUnsupportedEncodings>
+</proxy>
+<view>
+		<processImages>0</processImages>
+		<displayOption>1</displayOption>
+		<editorView>2</editorView>
+		<brkPanelView>0</brkPanelView>
+		<showMainToolbar>1</showMainToolbar>
+	</view>
+<start>
+        <checkForUpdates>false</checkForUpdates>
+    <dayLastChecked/>
+</start>
+<certificate>
+		<use>0</use>
+		<clientCertLocation/>
+		<experimentalSlotListIndex>false</experimentalSlotListIndex>
+	</certificate>
+<spider>
+		<thread>10</thread>
+		<maxDepth>10</maxDepth>
+		
+		<postform>true</postform>
+		<processform>true</processform>
+		<sendCookies>false</sendCookies>
+		<skipurl/>
+		<requestwait>200</requestwait>
+		<parseComments>true</parseComments>
+		<parseRobotsTxt>true</parseRobotsTxt>
+	<handleParameters>USE_ALL</handleParameters>
+</spider>
+<scanner>
+		<hostPerScan>2</hostPerScan>
+		<threadPerHost>20</threadPerHost>
+	</scanner>
+<portscan>
+		<threadPerHost>5</threadPerHost>
+		<maxPort>10240</maxPort>
+	</portscan>
+<pscans>
+		<autoTagScanners>
+			<scanner>
+				<name>html_tag_form</name>
+				<type>TAG</type>
+				<config>Form</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>&lt;form</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_tag_password</name>
+				<type>TAG</type>
+				<config>Password</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>&lt;password\s</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_type_password</name>
+				<type>TAG</type>
+				<config>Password</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>type\s*=\s*['"]?password['"]?</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_type_hidden</name>
+				<type>TAG</type>
+				<config>Hidden</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>type\s*=\s*['"]?hidden['"]?</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_type_upload</name>
+				<type>TAG</type>
+				<config>Upload</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>type\s*=\s*['"]?file['"]?</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_tag_object</name>
+				<type>TAG</type>
+				<config>Object</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>&lt;object\s</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_tag_script</name>
+				<type>TAG</type>
+				<config>Script</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>&lt;script</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_mailto</name>
+				<type>TAG</type>
+				<config>MailTo</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>&lt;.*href\s*['"]?mailto:</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_setcookie</name>
+				<type>TAG</type>
+				<config>SetCookie</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex>set-cookie</resHeadRegex>
+				<resBodyRegex/>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_comment1</name>
+				<type>TAG</type>
+				<config>Comment</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>/\*</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>html_comment2</name>
+				<type>TAG</type>
+				<config>Comment</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex/>
+				<resBodyRegex>&lt;!--</resBodyRegex>
+				<enabled>true</enabled>
+			</scanner>
+			<scanner>
+				<name>response_json</name>
+				<type>TAG</type>
+				<config>JSON</config>
+				<reqUrlRegex/>
+				<reqHeadRegex/>
+				<resHeadRegex>type\s*:\s*application\/json</resHeadRegex>
+				<resBodyRegex/>
+				<enabled>true</enabled>
+			</scanner>
+		</autoTagScanners>
+	</pscans>
+<addons>
+<block/>
+</addons>
+<api>
+<key>zapapisecret</key>
+</api>
+<reveal version="1">
+<enabled>false</enabled>
+</reveal>
+<ajaxSpider version="3"/>
+<rules>
+<common>
+<sleep>15</sleep>
+</common>
+<csrf>
+<ignorelist/>
+<ignore>
+<attname/>
+<attvalue/>
+</ignore>
+</csrf>
+<cookie>
+<ignorelist/>
+</cookie>
+</rules>
+<fuzz version="1">
+<defaultThreadsPerFuzzer>5</defaultThreadsPerFuzzer>
+<defaultCategoryName/>
+<defaultFuzzDelayInMs>0</defaultFuzzDelayInMs>
+<customFuzzerLastSelectedDirectory/>
+</fuzz>
+<selenium version="1"/>
+<plugins>
+<p6>
+<enabled>true</enabled>
+</p6>
+<p7>
+<enabled>true</enabled>
+</p7>
+<p40009>
+<enabled>true</enabled>
+</p40009>
+<p40012>
+<enabled>true</enabled>
+</p40012>
+<p40014>
+<enabled>true</enabled>
+</p40014>
+<p40018>
+<enabled>true</enabled>
+</p40018>
+<p90019>
+<enabled>true</enabled>
+</p90019>
+<p90020>
+<enabled>true</enabled>
+</p90020>
+<p0>
+<enabled>true</enabled>
+</p0>
+<p20019>
+<enabled>true</enabled>
+</p20019>
+<p30001>
+<enabled>true</enabled>
+</p30001>
+<p30002>
+<enabled>true</enabled>
+</p30002>
+<p40003>
+<enabled>true</enabled>
+</p40003>
+<p40008>
+<enabled>true</enabled>
+</p40008>
+<p40016>
+<enabled>true</enabled>
+</p40016>
+<p40017>
+<enabled>true</enabled>
+</p40017>
+<p50000>
+<enabled>true</enabled>
+</p50000>
+<p42>
+<enabled>true</enabled>
+</p42>
+<p10045>
+<enabled>true</enabled>
+</p10045>
+<p10048>
+<enabled>true</enabled>
+</p10048>
+<p20012>
+<enabled>true</enabled>
+</p20012>
+<p20015>
+<enabled>true</enabled>
+</p20015>
+<p20016>
+<enabled>true</enabled>
+</p20016>
+<p20017>
+<enabled>true</enabled>
+</p20017>
+<p20018>
+<enabled>true</enabled>
+</p20018>
+<p40013>
+<enabled>true</enabled>
+</p40013>
+<p40019>
+<enabled>true</enabled>
+</p40019>
+<p40020>
+<enabled>true</enabled>
+</p40020>
+<p40021>
+<enabled>true</enabled>
+</p40021>
+<p40022>
+<enabled>true</enabled>
+</p40022>
+<p90018>
+<enabled>true</enabled>
+</p90018>
+<p90021>
+<enabled>true</enabled>
+</p90021>
+<p90023>
+<enabled>true</enabled>
+</p90023>
+<p90024>
+<enabled>true</enabled>
+</p90024>
+<p90025>
+<enabled>true</enabled>
+</p90025>
+<p10095>
+<enabled>true</enabled>
+</p10095>
+<p30003>
+<enabled>true</enabled>
+</p30003>
+<p90028>
+<enabled>true</enabled>
+</p90028>
+<p20014>
+<enabled>true</enabled>
+</p20014>
+<p40023>
+<enabled>true</enabled>
+</p40023>
+<p41>
+<enabled>true</enabled>
+</p41>
+<p43>
+<enabled>true</enabled>
+</p43>
+<p10107>
+<enabled>true</enabled>
+</p10107>
+<p40015>
+<enabled>true</enabled>
+</p40015>
+<p40024>
+<enabled>true</enabled>
+</p40024>
+<p40027>
+<enabled>true</enabled>
+</p40027>
+<p60100>
+<enabled>true</enabled>
+</p60100>
+<p60101>
+<enabled>true</enabled>
+</p60101>
+<p10051>
+<enabled>true</enabled>
+</p10051>
+<p10053>
+<enabled>true</enabled>
+</p10053>
+<p10104>
+<enabled>true</enabled>
+</p10104>
+<p10106>
+<enabled>true</enabled>
+</p10106>
+<p40025>
+<enabled>true</enabled>
+</p40025>
+<p40028>
+<enabled>true</enabled>
+</p40028>
+<p40029>
+<enabled>true</enabled>
+</p40029>
+<p10047>
+<enabled>true</enabled>
+</p10047>
+<p90027>
+<enabled>true</enabled>
+</p90027>
+</plugins>
+<dynssl>
+<param>
+<rootca>_u3-7QAAAAIAAAABAAAAAQARb3dhc3BfemFwX3Jvb3RfY2EAAAFi_rlFlAAABQAwggT8MA4GCisGAQQBKgIRAQEFAASCBOjALsi2EGhJcbOTwaLdtWkTV5wMWgYV_pPVm9rSvtZKGRK77DaBKaFmhALz1AhL08giqcxYjjPVbn0VQZkdklk-6yU63NYOaWDQUQeg2sxaGL7TfNpUYJbE8mNg5O_UZRN0hcpS9-pLSzi5Z7pz_Hh2T3bcxmJkbMt27oZrXOVpqXaibImUmoBIHU10Jjd7ZHFSm-3QPCYOCmKbeH9rdzHMM47bbAgeYE9muOWdr8qp1CaO-pErUgdsOgAbyeB7e_2_mIXciSS47gFZ_MG1mFNK1GJBCl4ee_rRuBSszZgt1NQjOch8nKTm58X56BtmD5CDwNdMYQCv1n5zM0JHPK-H6-Quw2NxtfG86uUTrmqaoDk8SM0v-3gM4igiuas_drWIPs0A5RMp4X8xHaRNgtCjPp-5E3naG8gl5assSDIKcgPSTksRCgVXtnR3EnWdF0hVBvGa6SG6ez3Lv5ulkYQqK9_cid3B5BXi75EtM38g1AOlhVh5Wxicojf14c4bFC1FP5SR7-ry-2fpiQILcXGHTOvseehMWbacip5UAfMW2BoVHBPHwcFAzRrEmzqE-d8-gVusIl1O6nIqew8Q3X6u0iBVrF42skofqSh0PybAGBBghtftW5W8MR5Xky1bzKPthYN_a8yrYpi0tu0YbmP991jPm9JjZnV1ULW-fgWmP3Qrsj7DmWZ39VPzFEEALFSbs9669AKOds162DeeGOHupuxqGsG7T-p6PdpZhuDjN1eq9a28AK71tyz0YD8tbcdxvp-bU-GATAXEEmK1NOfc9186YGzw-Xp_6Jio-601fG1I4yB4F3GqT3Y50_WQARYV3a1SYvtGfhqdBvxLYXS2cOHwmpj8cuVPl8rMMCisDUqCGh1gWn62Kp6xBH3ebSDhQtYW26PmlG7SSWsiDlDNbZvOX6PaD0BwZkVcfAM990D3_21VBNa-3mNDnuuNfIjVibz0XuUd7NLOy4tm-J0wEY-pGqDzKi_bXQBVdX21DHLUNXoQjAPRpqFkiUmLJO2SSEb26S1r5eb_lJQ7XySTCSUkWQAhdgD2OdhecScoUsKm-jy2-4lrZ_XSHUA8EIPniwuSxEQTA7jM3ZmVvoW91aKT5CliHGojsH9unzvIE8YR1dnM6iUYPNOe0ERJYDcSUQVMdz4ITL4wvIScxXFuttwpdtZrWqc10mRxhyqE4pwfknfVDPcCYHA_5GQ_OYZMxn-cfU4PqXFsxn0G2o6ONA_TtO_3YwPDNe8X0UBAJhXbLbmFx8uVcJxz7-oxeT3-XD0M0eBpju5GSlxc9bajifZqQok4ywfPeLNn9TYwsSm6Dc0OVjSfjsOMGCc0i3KuN9OdLtDPRHyp17wCAnRkUTUHG_1wK3OC2BDQmqu6cW_5tfSELhDrW1EB5L4darTs_Aj4UpQuopccPG42CUItXcXljQyxqVEWnvgngkoYeWQf6vrM-dB3v9FEpCKerkKMyqmDLCQuNyQmR5w9kW5ezIZ1vZVWfvhavKaZ8q27eDUP18ovP-_AVR2Wq9-Hk4n-aYXeeAwzgM4m3VG_ZiSj_ZpcvLtXJar-iBIMkAD2gmvLgDK4pkotdU-TIwHSyfJ3v0B6JEt8zDsMynDEd0CHHrctdzR_Rq3gtsCRn7d1QD2ATl9ayazwOhkY2D3WMkDEZRJDqvddvgAAAAEABVguNTA5AAAFDDCCBQgwggPwoAMCAQICBJivQ14wDQYJKoZIhvcNAQELBQAwgYQxJzAlBgNVBAMMHk9XQVNQIFplZCBBdHRhY2sgUHJveHkgUm9vdCBDQTEYMBYGA1UEBwwPM2UyMzc4ODU1ZWNhZTkyMRYwFAYDVQQKDA1PV0FTUCBSb290IENBMRowGAYDVQQLDBFPV0FTUCBaQVAgUm9vdCBDQTELMAkGA1UEBhMCeHgwHhcNMTgwNDI1MjEzMjU3WhcNMTkwNDI1MjEzMjU3WjCBhDEnMCUGA1UEAwweT1dBU1AgWmVkIEF0dGFjayBQcm94eSBSb290IENBMRgwFgYDVQQHDA8zZTIzNzg4NTVlY2FlOTIxFjAUBgNVBAoMDU9XQVNQIFJvb3QgQ0ExGjAYBgNVBAsMEU9XQVNQIFpBUCBSb290IENBMQswCQYDVQQGEwJ4eDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI5xY5SQeQ1jNzDf8VQfr7Bj49RHzN20cs9hVkLikMTSH5XeqFL2uMfOlVdKtpd4SwXB9ftygfQl9Pf1IQHh_THN6XtvRWxZN_-4vBOnYSiyJ3TEeve0PYcAF8oP_HiodWiwPnKbF8ZwBJG7wTSVvK20olAYbJfeux-eyPDgfnMaKHVLinDOHQyfxwBBABaIIXMPSdcybXA_nIgyxoKfXd-KONit6MXal--FlsbKxcO68Xh09jGxzLbO3ch5QVqk5TR4Coj9xl5uyDCi0csh5wSpTZLUjTZoHqPhe-fwD-c6cv8omK0WeoVIH00z6nwFTlXwA2p5bKeJ5OLWf85b4mkCAwEAAaOCAX4wggF6MIIBMwYDVR0OBIIBKgSCASYwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCOcWOUkHkNYzcw3_FUH6-wY-PUR8zdtHLPYVZC4pDE0h-V3qhS9rjHzpVXSraXeEsFwfX7coH0JfT39SEB4f0xzel7b0VsWTf_uLwTp2Eosid0xHr3tD2HABfKD_x4qHVosD5ymxfGcASRu8E0lbyttKJQGGyX3rsfnsjw4H5zGih1S4pwzh0Mn8cAQQAWiCFzD0nXMm1wP5yIMsaCn13fijjYrejF2pfvhZbGysXDuvF4dPYxscy2zt3IeUFapOU0eAqI_cZebsgwotHLIecEqU2S1I02aB6j4Xvn8A_nOnL_KJitFnqFSB9NM-p8BU5V8ANqeWynieTi1n_OW-JpAgMBAAEwDwYDVR0TAQH_BAUwAwEB_zALBgNVHQ8EBAMCAbYwIwYDVR0lBBwwGgYIKwYBBQUHAwEGCCsGAQUFBwMCBgRVHSUAMA0GCSqGSIb3DQEBCwUAA4IBAQAtfC5Hp-G-8Lw1lj53dgtu6oaj1UNjSXdFeP_6tvyWYR20CKK3kyF_P1_lU-WfdD0usVj_bcRtw6_JcBCgPEoGxhUfL97fZfHWlBfT7p6yM8x_CpfmIp2jQ2kdI_2gWdVPNlnkd1ZgtnsU2qkROy69OUyMqAm8z7Qgqvnfh-DCt0IV1z0VNxtypMxj6LbkvjRF054I2D3TI15xQfxEvBXpNcZs7rbgQbRUPKumobJJtXPoPWkXgk2MjM7hkVGLskk5JuMFguQKbfBorfaSDeCB01X5mcSLBKL6qxZqg4Wq2-hCBSsp5KF470C6CTZKZkPsNHmX_20jTBJ7TwJbL2wajVjJGPNxM3gCXkEStCsZvQ-Vdsk</rootca>
+</param>
+</dynssl>
+<runnableAddOns>
+<addon>
+<id>zest</id>
+<version>23</version>
+</addon>
+<addon>
+<id>ascanrulesAlpha</id>
+<version>19</version>
+</addon>
+<addon>
+<id>help</id>
+<version>7</version>
+</addon>
+<addon>
+<id>webdriverlinux</id>
+<version>2</version>
+</addon>
+<addon>
+<id>coreLang</id>
+<version>11</version>
+</addon>
+<addon>
+<id>directorylistv1</id>
+<version>3</version>
+</addon>
+<addon>
+<id>retirejs</id>
+<version>4</version>
+</addon>
+<addon>
+<id>pscanrules</id>
+<version>19</version>
+</addon>
+<addon>
+<id>quickstart</id>
+<version>19</version>
+</addon>
+<addon>
+<id>spiderAjax</id>
+<version>17</version>
+</addon>
+<addon>
+<id>jxbrowserlinux32</id>
+<version>1</version>
+<extensions>
+<extension>org.zaproxy.zap.extension.jxbrowserlinux32.selenium.ExtSelJxBrowserLinux32</extension>
+</extensions>
+</addon>
+<addon>
+<id>jxbrowserwindows</id>
+<version>1</version>
+<extensions>
+<extension>org.zaproxy.zap.extension.jxbrowserwindows.selenium.ExtSelJxBrowserWindows</extension>
+</extensions>
+</addon>
+<addon>
+<id>selenium</id>
+<version>10</version>
+</addon>
+<addon>
+<id>onlineMenu</id>
+<version>5</version>
+</addon>
+<addon>
+<id>ascanrulesBeta</id>
+<version>21</version>
+</addon>
+<addon>
+<id>pscanrulesBeta</id>
+<version>16</version>
+</addon>
+<addon>
+<id>replacer</id>
+<version>2</version>
+</addon>
+<addon>
+<id>reveal</id>
+<version>2</version>
+</addon>
+<addon>
+<id>diff</id>
+<version>7</version>
+</addon>
+<addon>
+<id>webdriverwindows</id>
+<version>2</version>
+</addon>
+<addon>
+<id>invoke</id>
+<version>6</version>
+</addon>
+<addon>
+<id>websocket</id>
+<version>12</version>
+<extensions>
+<extension>org.zaproxy.zap.extension.websocket.fuzz.ExtensionWebSocketFuzzer</extension>
+</extensions>
+</addon>
+<addon>
+<id>gettingStarted</id>
+<version>6</version>
+</addon>
+<addon>
+<id>ascanrules</id>
+<version>26</version>
+</addon>
+<addon>
+<id>jxbrowserlinux64</id>
+<version>1</version>
+<extensions>
+<extension>org.zaproxy.zap.extension.jxbrowserlinux64.selenium.ExtSelJxBrowserLinux64</extension>
+</extensions>
+</addon>
+<addon>
+<id>saverawmessage</id>
+<version>3</version>
+</addon>
+<addon>
+<id>bruteforce</id>
+<version>6</version>
+</addon>
+<addon>
+<id>scripts</id>
+<version>18</version>
+</addon>
+<addon>
+<id>sqliplugin</id>
+<version>11</version>
+</addon>
+<addon>
+<id>alertFilters</id>
+<version>4</version>
+</addon>
+<addon>
+<id>fuzz</id>
+<version>8</version>
+</addon>
+<addon>
+<id>jxbrowser</id>
+<version>2</version>
+</addon>
+<addon>
+<id>tips</id>
+<version>6</version>
+</addon>
+</runnableAddOns>
+</config>

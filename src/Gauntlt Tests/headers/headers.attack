@@ -1,0 +1,18 @@
+@reallyslow
+Feature: Run header checks against a target
+
+  Background:
+    Given "curl" is installed
+    And the following environment variables:
+      | name     | environment_variable_name |
+      | hostname | HOSTNAME |
+
+  Scenario: Check for HTTP response headers
+    When I launch a "curl" attack with:
+    """
+    ../../tests/headers/headers.sh <hostname>
+    """
+    Then the output should contain:
+    """
+    Headers NOT Found: 5\n
+    """

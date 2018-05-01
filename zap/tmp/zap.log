@@ -1,0 +1,668 @@
+2018-04-25 14:32:52,635 [main ] INFO  Constant - Copying defaults from /Users/gl42ben/github/bdd-security/zap/./xml/config.xml to /Users/gl42ben/github/bdd-security/zap/tmp/config.xml
+2018-04-25 14:32:52,637 [main ] INFO  Constant - Creating directory /Users/gl42ben/github/bdd-security/zap/tmp/session
+2018-04-25 14:32:52,637 [main ] INFO  Constant - Creating directory /Users/gl42ben/github/bdd-security/zap/tmp/dirbuster
+2018-04-25 14:32:52,637 [main ] INFO  Constant - Creating directory /Users/gl42ben/github/bdd-security/zap/tmp/fuzzers
+2018-04-25 14:32:52,637 [main ] INFO  Constant - Creating directory /Users/gl42ben/github/bdd-security/zap/tmp/plugin
+2018-04-25 14:32:52,637 [main ] INFO  Constant - Creating directory: /Users/gl42ben/github/bdd-security/zap/tmp/filter
+2018-04-25 14:32:52,720 [main ] INFO  Constant - Backing up config file to /Users/gl42ben/github/bdd-security/zap/tmp/config.xml.bak
+2018-04-25 14:32:52,726 [main ] INFO  Constant - Upgraded from 1004000
+2018-04-25 14:32:52,831 [main ] INFO  DaemonBootstrap - OWASP ZAP 2.6.0 started 25/04/18 14:32:52
+2018-04-25 14:32:52,864 [main ] INFO  AbstractParam - Setting config scanner.threadPerHost = 20 was 2
+2018-04-25 14:32:52,864 [main ] INFO  AbstractParam - Setting config spider.thread = 10 was 2
+2018-04-25 14:32:52,864 [main ] INFO  AbstractParam - Setting config api.key = zapapisecret was null
+2018-04-25 14:32:52,864 [main ] INFO  AbstractParam - Setting config connection.proxyChain.hostName =  was 
+2018-04-25 14:32:52,864 [main ] INFO  AbstractParam - Setting config connection.proxyChain.port = 80 was 8080
+2018-04-25 14:32:52,864 [main ] INFO  AbstractParam - Setting config connection.proxyChain.enabled = true was null
+2018-04-25 14:32:52,866 [main ] INFO  SSLConnector - Reading supported SSL/TLS protocols...
+2018-04-25 14:32:52,866 [main ] INFO  SSLConnector - Using a SSLEngine...
+2018-04-25 14:32:52,884 [main ] INFO  SSLConnector - Done reading supported SSL/TLS protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+2018-04-25 14:32:52,891 [main ] INFO  OptionsParamCertificate - Unsafe SSL renegotiation disabled.
+2018-04-25 14:32:53,225 [main ] INFO  ENGINE - open start - state not modified
+2018-04-25 14:32:53,326 [main ] INFO  ENGINE - dataFileCache open start
+2018-04-25 14:32:53,331 [main ] INFO  ENGINE - dataFileCache open end
+2018-04-25 14:32:53,391 [ZAP-daemon] INFO  ExtensionFactory - Loading extensions
+2018-04-25 14:32:55,625 [ZAP-daemon] INFO  ExtensionFactory - Installed add-ons: [[id=alertFilters, fileVersion=4], [id=ascanrules, fileVersion=26], [id=ascanrulesAlpha, fileVersion=19], [id=ascanrulesBeta, fileVersion=21], [id=bruteforce, fileVersion=6], [id=coreLang, fileVersion=11], [id=diff, fileVersion=7], [id=directorylistv1, fileVersion=3], [id=fuzz, fileVersion=8, version=2.0.1], [id=gettingStarted, fileVersion=6], [id=help, fileVersion=7], [id=invoke, fileVersion=6], [id=jxbrowser, fileVersion=2], [id=jxbrowserlinux32, fileVersion=1], [id=jxbrowserlinux64, fileVersion=1], [id=jxbrowserwindows, fileVersion=1], [id=onlineMenu, fileVersion=5], [id=pscanrules, fileVersion=19], [id=pscanrulesBeta, fileVersion=16], [id=quickstart, fileVersion=19], [id=replacer, fileVersion=2], [id=retirejs, fileVersion=4], [id=reveal, fileVersion=2], [id=saverawmessage, fileVersion=3], [id=scripts, fileVersion=18], [id=selenium, fileVersion=10, version=1.1.0], [id=spiderAjax, fileVersion=17], [id=sqliplugin, fileVersion=11], [id=tips, fileVersion=6], [id=webdriverlinux, fileVersion=2], [id=webdriverwindows, fileVersion=2], [id=websocket, fileVersion=12], [id=zest, fileVersion=23]]
+2018-04-25 14:32:56,009 [ZAP-daemon] INFO  ExtensionFactory - Extensions loaded
+2018-04-25 14:32:56,259 [ZAP-daemon] INFO  FilterFactory - loaded filter Change user agent to other browsers. 
+2018-04-25 14:32:56,259 [ZAP-daemon] INFO  FilterFactory - loaded filter Detect insecure or potentially malicious content in HTTP responses.
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Detect and alert 'Set-cookie' attempt in HTTP response for modification.
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Avoid browser cache (strip off IfModifiedSince)
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Log cookies sent by browser.
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Log unique GET queries into file:filter/get.xls
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Log unique POST queries into file:  filter/post.xls
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Log request and response into file: filter/message.txt
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP request body using defined pattern.
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP request header using defined pattern.
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP response body using defined pattern.
+2018-04-25 14:32:56,260 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP response header using defined pattern.
+2018-04-25 14:32:56,261 [ZAP-daemon] INFO  FilterFactory - loaded filter Send ZAP session request ID
+2018-04-25 14:32:56,451 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows ZAP to check for updates
+2018-04-25 14:32:56,463 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionViewOption
+2018-04-25 14:32:56,463 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionEdit
+2018-04-25 14:32:56,463 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionFilter
+2018-04-25 14:32:56,463 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides a rest based API for controlling and accessing ZAP
+2018-04-25 14:32:56,534 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionState
+2018-04-25 14:32:56,534 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionReport
+2018-04-25 14:32:56,535 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHistory
+2018-04-25 14:32:56,537 [ZAP-daemon] INFO  ExtensionLoader - Initializing Show hidden fields and enable disabled fields
+2018-04-25 14:32:56,538 [ZAP-daemon] INFO  ExtensionLoader - Initializing Search messages for strings and regular expressions 
+2018-04-25 14:32:56,540 [ZAP-daemon] INFO  ExtensionLoader - Initializing Encode/Decode/Hash...
+2018-04-25 14:32:56,540 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to intercept and modify requests and responses
+2018-04-25 14:32:56,542 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive scanner
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Script Passive Scan Rules
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Stats Passive Scan Rule
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Application Error Disclosure
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Incomplete or No Cache-control and Pragma HTTP Header Set
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Content-Type Header Missing
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie No HttpOnly Flag
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie Without Secure Flag
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+2018-04-25 14:32:56,690 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Web Browser XSS Protection Not Enabled
+2018-04-25 14:32:56,691 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Secure Pages Include Mixed Content
+2018-04-25 14:32:56,691 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Password Autocomplete in Browser
+2018-04-25 14:32:56,691 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Private IP Disclosure
+2018-04-25 14:32:56,691 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Session ID in URL Rewrite
+2018-04-25 14:32:56,691 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Content-Type-Options Header Missing
+2018-04-25 14:32:56,691 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Frame-Options Header Scanner
+2018-04-25 14:32:56,691 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Charset Mismatch
+2018-04-25 14:32:56,691 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Loosely Scoped Cookie
+2018-04-25 14:32:56,692 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Absence of Anti-CSRF Tokens
+2018-04-25 14:32:56,692 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Debug Error Messages
+2018-04-25 14:32:56,692 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Informations in URL
+2018-04-25 14:32:56,692 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+2018-04-25 14:32:56,692 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Suspicious Comments
+2018-04-25 14:32:56,692 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Weak Authentication Method
+2018-04-25 14:32:56,692 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Insecure JSF ViewState
+2018-04-25 14:32:56,692 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: HTTP Parameter Override
+2018-04-25 14:32:56,693 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Viewstate Scanner
+2018-04-25 14:32:56,693 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Retire.js
+2018-04-25 14:32:56,710 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to view and manage alerts
+2018-04-25 14:32:56,710 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+2018-04-25 14:32:56,719 [ZAP-daemon] INFO  ExtensionLoader - Initializing Spider used for automatically finding URIs on a site
+2018-04-25 14:32:56,727 [ZAP-daemon] INFO  ExtensionLoader - Initializing A set of common popup menus for miscellaneous tasks
+2018-04-25 14:32:56,727 [ZAP-daemon] INFO  ExtensionLoader - Initializing Forced browsing of files and directories using code from the OWASP DirBuster tool
+2018-04-25 14:32:56,727 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionManualRequest
+2018-04-25 14:32:56,728 [ZAP-daemon] INFO  ExtensionLoader - Initializing Compares 2 sessions and generates an HTML file showing the differences
+2018-04-25 14:32:56,728 [ZAP-daemon] INFO  ExtensionLoader - Initializing Invoke external applications passing context related information such as URLs and parameters
+2018-04-25 14:32:56,728 [ZAP-daemon] INFO  ExtensionLoader - Initializing Handles anti cross site request forgery (CSRF) tokens
+2018-04-25 14:32:56,730 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionAuthentication
+2018-04-25 14:32:56,772 [ZAP-daemon] INFO  ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication]
+2018-04-25 14:32:56,773 [ZAP-daemon] INFO  ExtensionLoader - Initializing Creates a dynamic SSL certificate to allow SSL communications to be intercepted without warnings being generated by the browser
+2018-04-25 14:32:56,774 [ZAP-daemon] INFO  ExtensionLoader - Initializing Logs errors to the Output tab in development mode only
+2018-04-25 14:32:56,774 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionUserManagement
+2018-04-25 14:32:56,776 [ZAP-daemon] INFO  ExtensionLoader - Initializing Summarise and analyse FORM and URL parameters as well as cookies
+2018-04-25 14:32:56,776 [ZAP-daemon] INFO  ExtensionLoader - Initializing Script integration
+2018-04-25 14:32:56,793 [ZAP-daemon] INFO  ExtensionLoader - Initializing Scripting console, supports all JSR 223 scripting languages
+2018-04-25 14:32:56,794 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionForcedUser
+2018-04-25 14:32:56,794 [ZAP-daemon] INFO  ExtensionLoader - Initializing Extension handling HTTP sessions
+2018-04-25 14:32:56,796 [ZAP-daemon] INFO  ExtensionLoader - Initializing Zest is a specialized scripting language from Mozilla specifically designed to be used in security tools
+2018-04-25 14:32:57,050 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionDiff
+2018-04-25 14:32:57,050 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionRequestPostTableView
+2018-04-25 14:32:57,050 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionSessionManagement
+2018-04-25 14:32:57,054 [ZAP-daemon] INFO  ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management]
+2018-04-25 14:32:57,055 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelRequestFormTableView
+2018-04-25 14:32:57,055 [ZAP-daemon] INFO  ExtensionLoader - Initializing Capture messages from WebSockets with the ability to set breakpoints.
+2018-04-25 14:32:57,062 [ZAP-daemon] INFO  ExtensionLoader - Initializing Core UI related functionality.
+2018-04-25 14:32:57,062 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionAuthorization
+2018-04-25 14:32:57,063 [ZAP-daemon] INFO  ExtensionLoader - Initializing AJAX Spider, uses Crawljax
+2018-04-25 14:32:57,067 [ZAP-daemon] INFO  ExtensionLoader - Initializing Handles adding Global Excluded URLs
+2018-04-25 14:32:57,067 [ZAP-daemon] INFO  ExtensionLoader - Initializing Adds menu item to refresh the Sites tree
+2018-04-25 14:32:57,068 [ZAP-daemon] INFO  ExtensionLoader - Initializing Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+2018-04-25 14:32:57,068 [ZAP-daemon] INFO  ExtensionLoader - Initializing OWASP ZAP User Guide
+2018-04-25 14:32:57,068 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides a URL suitable for calling from target sites
+2018-04-25 14:32:57,071 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to configure which extensions are loaded when ZAP starts 
+2018-04-25 14:32:57,071 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelComponentonentAll
+2018-04-25 14:32:57,071 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelHexView
+2018-04-25 14:32:57,071 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelImageView
+2018-04-25 14:32:57,071 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelLargeRequestView
+2018-04-25 14:32:57,071 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelLargeResponseView
+2018-04-25 14:32:57,072 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelRequestQueryCookieTableView
+2018-04-25 14:32:57,072 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelSyntaxHighlightTextView
+2018-04-25 14:32:57,072 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active and passive rule configuration
+2018-04-25 14:32:57,074 [ZAP-daemon] INFO  ExtensionLoader - Initializing Statistics
+2018-04-25 14:32:57,079 [ZAP-daemon] INFO  ExtensionStats - Start recording in memory stats
+2018-04-25 14:32:57,082 [ZAP-daemon] INFO  ExtensionLoader - Initializing Context alert rules filter
+2018-04-25 14:32:57,083 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules
+2018-04-25 14:32:57,084 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules - alpha
+2018-04-25 14:32:57,084 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules - beta
+2018-04-25 14:32:57,084 [ZAP-daemon] INFO  ExtensionLoader - Initializing Translations of the core language files
+2018-04-25 14:32:57,084 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+2018-04-25 14:32:57,086 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows to fuzz HTTP messages.
+2018-04-25 14:32:57,086 [ZAP-daemon] INFO  ExtensionLoader - Initializing The ZAP Getting Started Guide
+2018-04-25 14:32:57,086 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowser
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserLinux32
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserLinux32
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserLinux64
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserLinux64
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserWindows
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserWindows
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing The Online menu links
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive Scan Rules
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive Scan Rules - beta
+2018-04-25 14:32:57,087 [ZAP-daemon] INFO  ExtensionLoader - Initializing Quick Start panel 
+2018-04-25 14:32:57,088 [ZAP-daemon] INFO  ExtensionLoader - Initializing Easy way to replace strings in requests and responses
+2018-04-25 14:32:57,092 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionSaveRawHttpMessage
+2018-04-25 14:32:57,092 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+2018-04-25 14:32:57,103 [ZAP-daemon] INFO  ExtensionLoader - Initializing Helper extension for Advanced SQL Injection scanner.
+2018-04-25 14:32:57,103 [ZAP-daemon] INFO  ExtensionLoader - Initializing Tips and Tricks
+2018-04-25 14:32:57,103 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows to fuzz WebSocket messages.
+2018-04-25 14:32:57,104 [ZAP-daemon] WARN  ExtensionAutoUpdate - This ZAP installation is over a year old - its probably very out of date
+2018-04-25 14:32:57,328 [ZAP-daemon] INFO  ExtensionCallback - Started callback server on 0.0.0.0:62341
+2018-04-25 14:32:57,328 [ZAP-daemon] INFO  ExtensionDynSSL - Creating new root CA certificate
+2018-04-25 14:32:57,629 [ZAP-daemon] INFO  ExtensionDynSSL - New root CA certificate created
+2018-04-25 14:32:57,633 [ZAP-daemon] INFO  DaemonBootstrap - ZAP is now listening on 127.0.0.1:62323
+2018-04-25 14:33:00,695 [ZAP-ProxyThread-72] WARN  API - ApiException while handling API request:
+Does Not Exist (does_not_exist) : Default Context
+	at org.zaproxy.zap.utils.ApiUtils.getContextByName(Unknown Source)
+	at org.zaproxy.zap.utils.ApiUtils.getContextByName(Unknown Source)
+	at org.zaproxy.zap.extension.api.ContextAPI.getContext(Unknown Source)
+	at org.zaproxy.zap.extension.api.ContextAPI.handleApiAction(Unknown Source)
+	at org.zaproxy.zap.extension.api.API.handleApiRequest(Unknown Source)
+	at org.parosproxy.paros.core.proxy.ProxyThread.processHttp(Unknown Source)
+	at org.parosproxy.paros.core.proxy.ProxyThread.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-25 14:33:00,771 [ZAP-SpiderInitThread-0] INFO  SpiderThread - Starting spidering scan on Context: Default Context at Wed Apr 25 14:33:00 MST 2018
+2018-04-25 14:33:00,775 [ZAP-SpiderInitThread-0] INFO  Spider - Spider initializing...
+2018-04-25 14:33:00,814 [ZAP-SpiderInitThread-0] INFO  Spider - Starting spider...
+2018-04-25 14:33:01,667 [ZAP-SpiderThreadPool-0-thread-4] INFO  Spider - Spidering process is complete. Shutting down...
+2018-04-25 14:33:01,668 [ZAP-SpiderShutdownThread-0] INFO  SpiderThread - Spider scanning complete: true
+2018-04-25 14:33:04,753 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Creating Retire.js cache directory /Users/gl42ben/.retirejs
+2018-04-25 14:33:04,753 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Caching Retire.js latest repository
+2018-04-25 14:33:05,693 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Loading the latest Retire.js repository
+2018-04-25 14:33:05,721 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - 31 loaded library.
+2018-04-25 14:33:10,883 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "scripts/fb11fb08.main.js"
+2018-04-25 14:33:10,884 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-25 14:33:10,884 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (scripts/fb11fb08.main.js)
+2018-04-25 14:33:10,884 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "fb11fb08.main.js"
+2018-04-25 14:33:10,884 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-25 14:33:10,884 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (fb11fb08.main.js)
+2018-04-25 14:33:10,885 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching da39a3ee5e6b4b0d3255bfef95601890afd80709 (scripts/fb11fb08.main.js)
+2018-04-25 14:33:10,885 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "[..]"
+2018-04-25 14:33:10,886 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-25 14:33:10,886 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "scripts/fb11fb08.main.js"
+2018-04-25 14:33:11,298 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/idcard/scripts/fb11fb08.main.js"
+2018-04-25 14:33:11,299 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-25 14:33:11,299 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/idcard/scripts/fb11fb08.main.js)
+2018-04-25 14:33:11,299 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "fb11fb08.main.js"
+2018-04-25 14:33:11,299 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-25 14:33:11,299 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (fb11fb08.main.js)
+2018-04-25 14:33:11,302 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 76b74a8b3dcc45cf1eaccb2aa65163e7abd31098 (/idcard/scripts/fb11fb08.main.js)
+2018-04-25 14:33:11,312 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "function FastClick(a[..]"
+2018-04-25 14:33:11,415 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Pattern match "[^a-z.]jquery:[ ]?"([0-9][0-9.a-z_\\\\-]+)"" !
+2018-04-25 14:33:11,415 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Identify the library jquery (version:1.8.3)
+2018-04-25 14:33:11,416 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.9.0b1
+2018-04-25 14:33:11,418 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.12.0
+2018-04-25 14:33:11,418 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.12.0
+2018-04-25 14:33:11,708 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (396 ms) to scan
+2018-04-25 14:33:12,307 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-25 14:33:12,307 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-25 14:33:12,307 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-25 14:33:12,307 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-25 14:33:12,307 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-25 14:33:12,307 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-25 14:33:12,309 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 6ea944de1780dedf922cebc46c192350cb6a8cd2 (/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-25 14:33:12,309 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "// Copyright 2012 Go[..]"
+2018-04-25 14:33:12,365 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (56 ms) to scan
+2018-04-25 14:33:12,365 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-25 14:33:17,408 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/analytics.js"
+2018-04-25 14:33:17,408 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-25 14:33:17,408 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/analytics.js)
+2018-04-25 14:33:17,408 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "analytics.js"
+2018-04-25 14:33:17,408 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-25 14:33:17,408 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (analytics.js)
+2018-04-25 14:33:17,409 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 1ffcf0f3b6af4c4de9eaf4842879c516ecc29a05 (/analytics.js)
+2018-04-25 14:33:17,409 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "(function(){var $c=f[..]"
+2018-04-25 14:33:17,425 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (16 ms) to scan
+2018-04-25 14:33:17,425 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/analytics.js"
+2018-04-25 14:33:17,431 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/plugins/ua/linkid.js"
+2018-04-25 14:33:17,432 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-25 14:33:17,432 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/plugins/ua/linkid.js)
+2018-04-25 14:33:17,432 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "linkid.js"
+2018-04-25 14:33:17,432 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-25 14:33:17,432 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (linkid.js)
+2018-04-25 14:33:17,432 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 3e8d3925b550345123f2cab26568221fd4154f9c (/plugins/ua/linkid.js)
+2018-04-25 14:33:17,432 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "(function(){var e=wi[..]"
+2018-04-25 14:33:17,433 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-25 14:33:17,433 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/plugins/ua/linkid.js"
+2018-04-25 14:33:35,229 [Thread-34] INFO  ENGINE - dataFileCache commit start
+2018-04-25 14:33:35,241 [Thread-34] INFO  ENGINE - dataFileCache commit end
+2018-04-25 14:33:35,243 [Thread-34] INFO  ENGINE - Database closed
+2018-04-25 14:33:35,346 [Thread-34] INFO  CoreAPI - OWASP ZAP 2.6.0 terminated.
+2018-04-26 10:21:11,405 [main ] INFO  DaemonBootstrap - OWASP ZAP 2.6.0 started 26/04/18 10:21:11
+2018-04-26 10:21:11,441 [main ] INFO  AbstractParam - Setting config scanner.threadPerHost = 20 was 20
+2018-04-26 10:21:11,442 [main ] INFO  AbstractParam - Setting config spider.thread = 10 was 10
+2018-04-26 10:21:11,442 [main ] INFO  AbstractParam - Setting config api.key = zapapisecret was zapapisecret
+2018-04-26 10:21:11,442 [main ] INFO  AbstractParam - Setting config connection.proxyChain.hostName =  was 
+2018-04-26 10:21:11,442 [main ] INFO  AbstractParam - Setting config connection.proxyChain.port = 80 was 80
+2018-04-26 10:21:11,443 [main ] INFO  AbstractParam - Setting config connection.proxyChain.enabled = true was false
+2018-04-26 10:21:11,446 [main ] INFO  SSLConnector - Reading supported SSL/TLS protocols...
+2018-04-26 10:21:11,446 [main ] INFO  SSLConnector - Using a SSLEngine...
+2018-04-26 10:21:11,471 [main ] INFO  SSLConnector - Done reading supported SSL/TLS protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+2018-04-26 10:21:11,475 [main ] INFO  OptionsParamCertificate - Unsafe SSL renegotiation disabled.
+2018-04-26 10:21:11,833 [main ] INFO  ENGINE - open start - state not modified
+2018-04-26 10:21:11,929 [main ] INFO  ENGINE - dataFileCache open start
+2018-04-26 10:21:11,937 [main ] INFO  ENGINE - dataFileCache open end
+2018-04-26 10:21:11,996 [ZAP-daemon] INFO  ExtensionFactory - Loading extensions
+2018-04-26 10:21:13,518 [ZAP-daemon] INFO  ExtensionFactory - Installed add-ons: [[id=alertFilters, fileVersion=4], [id=ascanrules, fileVersion=26], [id=ascanrulesAlpha, fileVersion=19], [id=ascanrulesBeta, fileVersion=21], [id=bruteforce, fileVersion=6], [id=coreLang, fileVersion=11], [id=diff, fileVersion=7], [id=directorylistv1, fileVersion=3], [id=fuzz, fileVersion=8, version=2.0.1], [id=gettingStarted, fileVersion=6], [id=help, fileVersion=7], [id=invoke, fileVersion=6], [id=jxbrowser, fileVersion=2], [id=jxbrowserlinux32, fileVersion=1], [id=jxbrowserlinux64, fileVersion=1], [id=jxbrowserwindows, fileVersion=1], [id=onlineMenu, fileVersion=5], [id=pscanrules, fileVersion=19], [id=pscanrulesBeta, fileVersion=16], [id=quickstart, fileVersion=19], [id=replacer, fileVersion=2], [id=retirejs, fileVersion=4], [id=reveal, fileVersion=2], [id=saverawmessage, fileVersion=3], [id=scripts, fileVersion=18], [id=selenium, fileVersion=10, version=1.1.0], [id=spiderAjax, fileVersion=17], [id=sqliplugin, fileVersion=11], [id=tips, fileVersion=6], [id=webdriverlinux, fileVersion=2], [id=webdriverwindows, fileVersion=2], [id=websocket, fileVersion=12], [id=zest, fileVersion=23]]
+2018-04-26 10:21:13,846 [ZAP-daemon] INFO  ExtensionFactory - Extensions loaded
+2018-04-26 10:21:13,999 [ZAP-daemon] INFO  FilterFactory - loaded filter Change user agent to other browsers. 
+2018-04-26 10:21:13,999 [ZAP-daemon] INFO  FilterFactory - loaded filter Detect insecure or potentially malicious content in HTTP responses.
+2018-04-26 10:21:13,999 [ZAP-daemon] INFO  FilterFactory - loaded filter Detect and alert 'Set-cookie' attempt in HTTP response for modification.
+2018-04-26 10:21:13,999 [ZAP-daemon] INFO  FilterFactory - loaded filter Avoid browser cache (strip off IfModifiedSince)
+2018-04-26 10:21:13,999 [ZAP-daemon] INFO  FilterFactory - loaded filter Log cookies sent by browser.
+2018-04-26 10:21:13,999 [ZAP-daemon] INFO  FilterFactory - loaded filter Log unique GET queries into file:filter/get.xls
+2018-04-26 10:21:13,999 [ZAP-daemon] INFO  FilterFactory - loaded filter Log unique POST queries into file:  filter/post.xls
+2018-04-26 10:21:14,000 [ZAP-daemon] INFO  FilterFactory - loaded filter Log request and response into file: filter/message.txt
+2018-04-26 10:21:14,000 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP request body using defined pattern.
+2018-04-26 10:21:14,000 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP request header using defined pattern.
+2018-04-26 10:21:14,000 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP response body using defined pattern.
+2018-04-26 10:21:14,000 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP response header using defined pattern.
+2018-04-26 10:21:14,000 [ZAP-daemon] INFO  FilterFactory - loaded filter Send ZAP session request ID
+2018-04-26 10:21:14,132 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows ZAP to check for updates
+2018-04-26 10:21:14,141 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionViewOption
+2018-04-26 10:21:14,141 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionEdit
+2018-04-26 10:21:14,141 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionFilter
+2018-04-26 10:21:14,141 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides a rest based API for controlling and accessing ZAP
+2018-04-26 10:21:14,183 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionState
+2018-04-26 10:21:14,183 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionReport
+2018-04-26 10:21:14,183 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHistory
+2018-04-26 10:21:14,185 [ZAP-daemon] INFO  ExtensionLoader - Initializing Show hidden fields and enable disabled fields
+2018-04-26 10:21:14,186 [ZAP-daemon] INFO  ExtensionLoader - Initializing Search messages for strings and regular expressions 
+2018-04-26 10:21:14,187 [ZAP-daemon] INFO  ExtensionLoader - Initializing Encode/Decode/Hash...
+2018-04-26 10:21:14,187 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to intercept and modify requests and responses
+2018-04-26 10:21:14,188 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive scanner
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Script Passive Scan Rules
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Stats Passive Scan Rule
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Application Error Disclosure
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Incomplete or No Cache-control and Pragma HTTP Header Set
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Content-Type Header Missing
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie No HttpOnly Flag
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie Without Secure Flag
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Web Browser XSS Protection Not Enabled
+2018-04-26 10:21:14,273 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Secure Pages Include Mixed Content
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Password Autocomplete in Browser
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Private IP Disclosure
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Session ID in URL Rewrite
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Content-Type-Options Header Missing
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Frame-Options Header Scanner
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Charset Mismatch
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Loosely Scoped Cookie
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Absence of Anti-CSRF Tokens
+2018-04-26 10:21:14,274 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Debug Error Messages
+2018-04-26 10:21:14,275 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Informations in URL
+2018-04-26 10:21:14,275 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+2018-04-26 10:21:14,275 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Suspicious Comments
+2018-04-26 10:21:14,275 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Weak Authentication Method
+2018-04-26 10:21:14,275 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Insecure JSF ViewState
+2018-04-26 10:21:14,275 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: HTTP Parameter Override
+2018-04-26 10:21:14,275 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Viewstate Scanner
+2018-04-26 10:21:14,275 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Retire.js
+2018-04-26 10:21:14,288 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to view and manage alerts
+2018-04-26 10:21:14,288 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+2018-04-26 10:21:14,295 [ZAP-daemon] INFO  ExtensionLoader - Initializing Spider used for automatically finding URIs on a site
+2018-04-26 10:21:14,301 [ZAP-daemon] INFO  ExtensionLoader - Initializing A set of common popup menus for miscellaneous tasks
+2018-04-26 10:21:14,302 [ZAP-daemon] INFO  ExtensionLoader - Initializing Forced browsing of files and directories using code from the OWASP DirBuster tool
+2018-04-26 10:21:14,302 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionManualRequest
+2018-04-26 10:21:14,303 [ZAP-daemon] INFO  ExtensionLoader - Initializing Compares 2 sessions and generates an HTML file showing the differences
+2018-04-26 10:21:14,303 [ZAP-daemon] INFO  ExtensionLoader - Initializing Invoke external applications passing context related information such as URLs and parameters
+2018-04-26 10:21:14,303 [ZAP-daemon] INFO  ExtensionLoader - Initializing Handles anti cross site request forgery (CSRF) tokens
+2018-04-26 10:21:14,304 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionAuthentication
+2018-04-26 10:21:14,329 [ZAP-daemon] INFO  ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication]
+2018-04-26 10:21:14,330 [ZAP-daemon] INFO  ExtensionLoader - Initializing Creates a dynamic SSL certificate to allow SSL communications to be intercepted without warnings being generated by the browser
+2018-04-26 10:21:14,350 [ZAP-daemon] INFO  ExtensionLoader - Initializing Logs errors to the Output tab in development mode only
+2018-04-26 10:21:14,350 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionUserManagement
+2018-04-26 10:21:14,351 [ZAP-daemon] INFO  ExtensionLoader - Initializing Summarise and analyse FORM and URL parameters as well as cookies
+2018-04-26 10:21:14,352 [ZAP-daemon] INFO  ExtensionLoader - Initializing Script integration
+2018-04-26 10:21:14,366 [ZAP-daemon] INFO  ExtensionLoader - Initializing Scripting console, supports all JSR 223 scripting languages
+2018-04-26 10:21:14,366 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionForcedUser
+2018-04-26 10:21:14,366 [ZAP-daemon] INFO  ExtensionLoader - Initializing Extension handling HTTP sessions
+2018-04-26 10:21:14,368 [ZAP-daemon] INFO  ExtensionLoader - Initializing Zest is a specialized scripting language from Mozilla specifically designed to be used in security tools
+2018-04-26 10:21:14,542 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionDiff
+2018-04-26 10:21:14,542 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionRequestPostTableView
+2018-04-26 10:21:14,542 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionSessionManagement
+2018-04-26 10:21:14,546 [ZAP-daemon] INFO  ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management]
+2018-04-26 10:21:14,546 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelRequestFormTableView
+2018-04-26 10:21:14,546 [ZAP-daemon] INFO  ExtensionLoader - Initializing Capture messages from WebSockets with the ability to set breakpoints.
+2018-04-26 10:21:14,551 [ZAP-daemon] INFO  ExtensionLoader - Initializing Core UI related functionality.
+2018-04-26 10:21:14,551 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionAuthorization
+2018-04-26 10:21:14,551 [ZAP-daemon] INFO  ExtensionLoader - Initializing AJAX Spider, uses Crawljax
+2018-04-26 10:21:14,552 [ZAP-daemon] INFO  ExtensionLoader - Initializing Handles adding Global Excluded URLs
+2018-04-26 10:21:14,552 [ZAP-daemon] INFO  ExtensionLoader - Initializing Adds menu item to refresh the Sites tree
+2018-04-26 10:21:14,552 [ZAP-daemon] INFO  ExtensionLoader - Initializing Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+2018-04-26 10:21:14,552 [ZAP-daemon] INFO  ExtensionLoader - Initializing OWASP ZAP User Guide
+2018-04-26 10:21:14,552 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides a URL suitable for calling from target sites
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to configure which extensions are loaded when ZAP starts 
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelComponentonentAll
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelHexView
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelImageView
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelLargeRequestView
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelLargeResponseView
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelRequestQueryCookieTableView
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelSyntaxHighlightTextView
+2018-04-26 10:21:14,554 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active and passive rule configuration
+2018-04-26 10:21:14,556 [ZAP-daemon] INFO  ExtensionLoader - Initializing Statistics
+2018-04-26 10:21:14,557 [ZAP-daemon] INFO  ExtensionStats - Start recording in memory stats
+2018-04-26 10:21:14,559 [ZAP-daemon] INFO  ExtensionLoader - Initializing Context alert rules filter
+2018-04-26 10:21:14,559 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules
+2018-04-26 10:21:14,560 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules - alpha
+2018-04-26 10:21:14,560 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules - beta
+2018-04-26 10:21:14,560 [ZAP-daemon] INFO  ExtensionLoader - Initializing Translations of the core language files
+2018-04-26 10:21:14,560 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+2018-04-26 10:21:14,561 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows to fuzz HTTP messages.
+2018-04-26 10:21:14,562 [ZAP-daemon] INFO  ExtensionLoader - Initializing The ZAP Getting Started Guide
+2018-04-26 10:21:14,562 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowser
+2018-04-26 10:21:14,562 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserLinux32
+2018-04-26 10:21:14,562 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserLinux32
+2018-04-26 10:21:14,562 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserLinux64
+2018-04-26 10:21:14,562 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserLinux64
+2018-04-26 10:21:14,562 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserWindows
+2018-04-26 10:21:14,562 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserWindows
+2018-04-26 10:21:14,563 [ZAP-daemon] INFO  ExtensionLoader - Initializing The Online menu links
+2018-04-26 10:21:14,563 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive Scan Rules
+2018-04-26 10:21:14,563 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive Scan Rules - beta
+2018-04-26 10:21:14,563 [ZAP-daemon] INFO  ExtensionLoader - Initializing Quick Start panel 
+2018-04-26 10:21:14,563 [ZAP-daemon] INFO  ExtensionLoader - Initializing Easy way to replace strings in requests and responses
+2018-04-26 10:21:14,565 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionSaveRawHttpMessage
+2018-04-26 10:21:14,565 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+2018-04-26 10:21:14,575 [ZAP-daemon] INFO  ExtensionLoader - Initializing Helper extension for Advanced SQL Injection scanner.
+2018-04-26 10:21:14,575 [ZAP-daemon] INFO  ExtensionLoader - Initializing Tips and Tricks
+2018-04-26 10:21:14,575 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows to fuzz WebSocket messages.
+2018-04-26 10:21:14,576 [ZAP-daemon] WARN  ExtensionAutoUpdate - This ZAP installation is over a year old - its probably very out of date
+2018-04-26 10:21:14,625 [ZAP-daemon] INFO  ExtensionCallback - Started callback server on 0.0.0.0:59139
+2018-04-26 10:21:14,731 [ZAP-daemon] INFO  DaemonBootstrap - ZAP is now listening on 127.0.0.1:59133
+2018-04-26 10:21:17,198 [ZAP-ProxyThread-72] WARN  API - ApiException while handling API request:
+Does Not Exist (does_not_exist) : Default Context
+	at org.zaproxy.zap.utils.ApiUtils.getContextByName(Unknown Source)
+	at org.zaproxy.zap.utils.ApiUtils.getContextByName(Unknown Source)
+	at org.zaproxy.zap.extension.api.ContextAPI.getContext(Unknown Source)
+	at org.zaproxy.zap.extension.api.ContextAPI.handleApiAction(Unknown Source)
+	at org.zaproxy.zap.extension.api.API.handleApiRequest(Unknown Source)
+	at org.parosproxy.paros.core.proxy.ProxyThread.processHttp(Unknown Source)
+	at org.parosproxy.paros.core.proxy.ProxyThread.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-26 10:21:17,259 [ZAP-SpiderInitThread-0] INFO  SpiderThread - Starting spidering scan on Context: Default Context at Thu Apr 26 10:21:17 MST 2018
+2018-04-26 10:21:17,262 [ZAP-SpiderInitThread-0] INFO  Spider - Spider initializing...
+2018-04-26 10:21:17,303 [ZAP-SpiderInitThread-0] INFO  Spider - Starting spider...
+2018-04-26 10:21:18,533 [ZAP-SpiderThreadPool-0-thread-4] INFO  Spider - Spidering process is complete. Shutting down...
+2018-04-26 10:21:18,534 [ZAP-SpiderShutdownThread-0] INFO  SpiderThread - Spider scanning complete: true
+2018-04-26 10:21:21,210 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Caching Retire.js latest repository
+2018-04-26 10:21:21,431 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Loading the latest Retire.js repository
+2018-04-26 10:21:21,450 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - 31 loaded library.
+2018-04-26 10:21:26,557 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "scripts/fb11fb08.main.js"
+2018-04-26 10:21:26,558 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:26,558 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (scripts/fb11fb08.main.js)
+2018-04-26 10:21:26,558 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "fb11fb08.main.js"
+2018-04-26 10:21:26,559 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-26 10:21:26,559 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (fb11fb08.main.js)
+2018-04-26 10:21:26,560 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching da39a3ee5e6b4b0d3255bfef95601890afd80709 (scripts/fb11fb08.main.js)
+2018-04-26 10:21:26,560 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "[..]"
+2018-04-26 10:21:26,561 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-26 10:21:26,561 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "scripts/fb11fb08.main.js"
+2018-04-26 10:21:27,017 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/idcard/scripts/fb11fb08.main.js"
+2018-04-26 10:21:27,017 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,017 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/idcard/scripts/fb11fb08.main.js)
+2018-04-26 10:21:27,017 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "fb11fb08.main.js"
+2018-04-26 10:21:27,017 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,018 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (fb11fb08.main.js)
+2018-04-26 10:21:27,020 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 76b74a8b3dcc45cf1eaccb2aa65163e7abd31098 (/idcard/scripts/fb11fb08.main.js)
+2018-04-26 10:21:27,021 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "function FastClick(a[..]"
+2018-04-26 10:21:27,090 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Pattern match "[^a-z.]jquery:[ ]?"([0-9][0-9.a-z_\\\\-]+)"" !
+2018-04-26 10:21:27,090 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Identify the library jquery (version:1.8.3)
+2018-04-26 10:21:27,091 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.9.0b1
+2018-04-26 10:21:27,091 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.12.0
+2018-04-26 10:21:27,091 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.12.0
+2018-04-26 10:21:27,216 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (195 ms) to scan
+2018-04-26 10:21:27,606 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-26 10:21:27,606 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,606 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-26 10:21:27,606 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-26 10:21:27,606 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,607 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-26 10:21:27,607 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching b50a7795b135c9155848088b4d647946697d92fa (/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-26 10:21:27,607 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "// Copyright 2012 Go[..]"
+2018-04-26 10:21:27,653 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (45 ms) to scan
+2018-04-26 10:21:27,653 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-26 10:21:27,687 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/analytics.js"
+2018-04-26 10:21:27,687 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,688 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/analytics.js)
+2018-04-26 10:21:27,688 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "analytics.js"
+2018-04-26 10:21:27,688 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,688 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (analytics.js)
+2018-04-26 10:21:27,688 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 1ffcf0f3b6af4c4de9eaf4842879c516ecc29a05 (/analytics.js)
+2018-04-26 10:21:27,688 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "(function(){var $c=f[..]"
+2018-04-26 10:21:27,704 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (16 ms) to scan
+2018-04-26 10:21:27,705 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/analytics.js"
+2018-04-26 10:21:27,713 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/plugins/ua/linkid.js"
+2018-04-26 10:21:27,713 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,713 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/plugins/ua/linkid.js)
+2018-04-26 10:21:27,713 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "linkid.js"
+2018-04-26 10:21:27,713 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,713 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (linkid.js)
+2018-04-26 10:21:27,713 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 3e8d3925b550345123f2cab26568221fd4154f9c (/plugins/ua/linkid.js)
+2018-04-26 10:21:27,713 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "(function(){var e=wi[..]"
+2018-04-26 10:21:27,714 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 10:21:27,715 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/plugins/ua/linkid.js"
+2018-04-26 10:21:49,643 [Thread-34] INFO  ENGINE - dataFileCache commit start
+2018-04-26 10:21:49,660 [Thread-34] INFO  ENGINE - dataFileCache commit end
+2018-04-26 10:21:49,663 [Thread-34] INFO  ENGINE - Database closed
+2018-04-26 10:21:49,768 [Thread-34] INFO  CoreAPI - OWASP ZAP 2.6.0 terminated.
+2018-04-26 12:46:23,040 [main ] INFO  DaemonBootstrap - OWASP ZAP 2.6.0 started 26/04/18 12:46:23
+2018-04-26 12:46:23,073 [main ] INFO  AbstractParam - Setting config scanner.threadPerHost = 20 was 20
+2018-04-26 12:46:23,074 [main ] INFO  AbstractParam - Setting config spider.thread = 10 was 10
+2018-04-26 12:46:23,074 [main ] INFO  AbstractParam - Setting config api.key = zapapisecret was zapapisecret
+2018-04-26 12:46:23,074 [main ] INFO  AbstractParam - Setting config connection.proxyChain.hostName =  was 
+2018-04-26 12:46:23,074 [main ] INFO  AbstractParam - Setting config connection.proxyChain.port = 80 was 80
+2018-04-26 12:46:23,074 [main ] INFO  AbstractParam - Setting config connection.proxyChain.enabled = true was false
+2018-04-26 12:46:23,077 [main ] INFO  SSLConnector - Reading supported SSL/TLS protocols...
+2018-04-26 12:46:23,077 [main ] INFO  SSLConnector - Using a SSLEngine...
+2018-04-26 12:46:23,097 [main ] INFO  SSLConnector - Done reading supported SSL/TLS protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+2018-04-26 12:46:23,106 [main ] INFO  OptionsParamCertificate - Unsafe SSL renegotiation disabled.
+2018-04-26 12:46:23,460 [main ] INFO  ENGINE - open start - state not modified
+2018-04-26 12:46:23,551 [main ] INFO  ENGINE - dataFileCache open start
+2018-04-26 12:46:23,557 [main ] INFO  ENGINE - dataFileCache open end
+2018-04-26 12:46:23,609 [ZAP-daemon] INFO  ExtensionFactory - Loading extensions
+2018-04-26 12:46:24,960 [ZAP-daemon] INFO  ExtensionFactory - Installed add-ons: [[id=alertFilters, fileVersion=4], [id=ascanrules, fileVersion=26], [id=ascanrulesAlpha, fileVersion=19], [id=ascanrulesBeta, fileVersion=21], [id=bruteforce, fileVersion=6], [id=coreLang, fileVersion=11], [id=diff, fileVersion=7], [id=directorylistv1, fileVersion=3], [id=fuzz, fileVersion=8, version=2.0.1], [id=gettingStarted, fileVersion=6], [id=help, fileVersion=7], [id=invoke, fileVersion=6], [id=jxbrowser, fileVersion=2], [id=jxbrowserlinux32, fileVersion=1], [id=jxbrowserlinux64, fileVersion=1], [id=jxbrowserwindows, fileVersion=1], [id=onlineMenu, fileVersion=5], [id=pscanrules, fileVersion=19], [id=pscanrulesBeta, fileVersion=16], [id=quickstart, fileVersion=19], [id=replacer, fileVersion=2], [id=retirejs, fileVersion=4], [id=reveal, fileVersion=2], [id=saverawmessage, fileVersion=3], [id=scripts, fileVersion=18], [id=selenium, fileVersion=10, version=1.1.0], [id=spiderAjax, fileVersion=17], [id=sqliplugin, fileVersion=11], [id=tips, fileVersion=6], [id=webdriverlinux, fileVersion=2], [id=webdriverwindows, fileVersion=2], [id=websocket, fileVersion=12], [id=zest, fileVersion=23]]
+2018-04-26 12:46:25,292 [ZAP-daemon] INFO  ExtensionFactory - Extensions loaded
+2018-04-26 12:46:25,434 [ZAP-daemon] INFO  FilterFactory - loaded filter Change user agent to other browsers. 
+2018-04-26 12:46:25,434 [ZAP-daemon] INFO  FilterFactory - loaded filter Detect insecure or potentially malicious content in HTTP responses.
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Detect and alert 'Set-cookie' attempt in HTTP response for modification.
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Avoid browser cache (strip off IfModifiedSince)
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Log cookies sent by browser.
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Log unique GET queries into file:filter/get.xls
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Log unique POST queries into file:  filter/post.xls
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Log request and response into file: filter/message.txt
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP request body using defined pattern.
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP request header using defined pattern.
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP response body using defined pattern.
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Replace HTTP response header using defined pattern.
+2018-04-26 12:46:25,435 [ZAP-daemon] INFO  FilterFactory - loaded filter Send ZAP session request ID
+2018-04-26 12:46:25,555 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows ZAP to check for updates
+2018-04-26 12:46:25,565 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionViewOption
+2018-04-26 12:46:25,565 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionEdit
+2018-04-26 12:46:25,565 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionFilter
+2018-04-26 12:46:25,565 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides a rest based API for controlling and accessing ZAP
+2018-04-26 12:46:25,600 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionState
+2018-04-26 12:46:25,600 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionReport
+2018-04-26 12:46:25,600 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHistory
+2018-04-26 12:46:25,601 [ZAP-daemon] INFO  ExtensionLoader - Initializing Show hidden fields and enable disabled fields
+2018-04-26 12:46:25,602 [ZAP-daemon] INFO  ExtensionLoader - Initializing Search messages for strings and regular expressions 
+2018-04-26 12:46:25,602 [ZAP-daemon] INFO  ExtensionLoader - Initializing Encode/Decode/Hash...
+2018-04-26 12:46:25,603 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to intercept and modify requests and responses
+2018-04-26 12:46:25,604 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive scanner
+2018-04-26 12:46:25,683 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Script Passive Scan Rules
+2018-04-26 12:46:25,684 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Stats Passive Scan Rule
+2018-04-26 12:46:25,684 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Application Error Disclosure
+2018-04-26 12:46:25,684 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Incomplete or No Cache-control and Pragma HTTP Header Set
+2018-04-26 12:46:25,684 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Content-Type Header Missing
+2018-04-26 12:46:25,684 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie No HttpOnly Flag
+2018-04-26 12:46:25,684 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cookie Without Secure Flag
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Web Browser XSS Protection Not Enabled
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Secure Pages Include Mixed Content
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Password Autocomplete in Browser
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Private IP Disclosure
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Session ID in URL Rewrite
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Content-Type-Options Header Missing
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: X-Frame-Options Header Scanner
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Charset Mismatch
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Loosely Scoped Cookie
+2018-04-26 12:46:25,685 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Absence of Anti-CSRF Tokens
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Debug Error Messages
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Informations in URL
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Suspicious Comments
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Weak Authentication Method
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Insecure JSF ViewState
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: HTTP Parameter Override
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Viewstate Scanner
+2018-04-26 12:46:25,686 [ZAP-daemon] INFO  ExtensionPassiveScan - loaded passive scan rule: Retire.js
+2018-04-26 12:46:25,698 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to view and manage alerts
+2018-04-26 12:46:25,698 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+2018-04-26 12:46:25,704 [ZAP-daemon] INFO  ExtensionLoader - Initializing Spider used for automatically finding URIs on a site
+2018-04-26 12:46:25,710 [ZAP-daemon] INFO  ExtensionLoader - Initializing A set of common popup menus for miscellaneous tasks
+2018-04-26 12:46:25,710 [ZAP-daemon] INFO  ExtensionLoader - Initializing Forced browsing of files and directories using code from the OWASP DirBuster tool
+2018-04-26 12:46:25,711 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionManualRequest
+2018-04-26 12:46:25,711 [ZAP-daemon] INFO  ExtensionLoader - Initializing Compares 2 sessions and generates an HTML file showing the differences
+2018-04-26 12:46:25,711 [ZAP-daemon] INFO  ExtensionLoader - Initializing Invoke external applications passing context related information such as URLs and parameters
+2018-04-26 12:46:25,711 [ZAP-daemon] INFO  ExtensionLoader - Initializing Handles anti cross site request forgery (CSRF) tokens
+2018-04-26 12:46:25,713 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionAuthentication
+2018-04-26 12:46:25,736 [ZAP-daemon] INFO  ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication]
+2018-04-26 12:46:25,737 [ZAP-daemon] INFO  ExtensionLoader - Initializing Creates a dynamic SSL certificate to allow SSL communications to be intercepted without warnings being generated by the browser
+2018-04-26 12:46:25,756 [ZAP-daemon] INFO  ExtensionLoader - Initializing Logs errors to the Output tab in development mode only
+2018-04-26 12:46:25,756 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionUserManagement
+2018-04-26 12:46:25,758 [ZAP-daemon] INFO  ExtensionLoader - Initializing Summarise and analyse FORM and URL parameters as well as cookies
+2018-04-26 12:46:25,758 [ZAP-daemon] INFO  ExtensionLoader - Initializing Script integration
+2018-04-26 12:46:25,772 [ZAP-daemon] INFO  ExtensionLoader - Initializing Scripting console, supports all JSR 223 scripting languages
+2018-04-26 12:46:25,773 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionForcedUser
+2018-04-26 12:46:25,773 [ZAP-daemon] INFO  ExtensionLoader - Initializing Extension handling HTTP sessions
+2018-04-26 12:46:25,774 [ZAP-daemon] INFO  ExtensionLoader - Initializing Zest is a specialized scripting language from Mozilla specifically designed to be used in security tools
+2018-04-26 12:46:25,959 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionDiff
+2018-04-26 12:46:25,959 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionRequestPostTableView
+2018-04-26 12:46:25,959 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionSessionManagement
+2018-04-26 12:46:25,963 [ZAP-daemon] INFO  ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management]
+2018-04-26 12:46:25,963 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelRequestFormTableView
+2018-04-26 12:46:25,963 [ZAP-daemon] INFO  ExtensionLoader - Initializing Capture messages from WebSockets with the ability to set breakpoints.
+2018-04-26 12:46:25,967 [ZAP-daemon] INFO  ExtensionLoader - Initializing Core UI related functionality.
+2018-04-26 12:46:25,968 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionAuthorization
+2018-04-26 12:46:25,968 [ZAP-daemon] INFO  ExtensionLoader - Initializing AJAX Spider, uses Crawljax
+2018-04-26 12:46:25,969 [ZAP-daemon] INFO  ExtensionLoader - Initializing Handles adding Global Excluded URLs
+2018-04-26 12:46:25,969 [ZAP-daemon] INFO  ExtensionLoader - Initializing Adds menu item to refresh the Sites tree
+2018-04-26 12:46:25,969 [ZAP-daemon] INFO  ExtensionLoader - Initializing Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+2018-04-26 12:46:25,969 [ZAP-daemon] INFO  ExtensionLoader - Initializing OWASP ZAP User Guide
+2018-04-26 12:46:25,969 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides a URL suitable for calling from target sites
+2018-04-26 12:46:25,970 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows you to configure which extensions are loaded when ZAP starts 
+2018-04-26 12:46:25,970 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelComponentonentAll
+2018-04-26 12:46:25,970 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelHexView
+2018-04-26 12:46:25,971 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelImageView
+2018-04-26 12:46:25,971 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelLargeRequestView
+2018-04-26 12:46:25,971 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelLargeResponseView
+2018-04-26 12:46:25,971 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelRequestQueryCookieTableView
+2018-04-26 12:46:25,971 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionHttpPanelSyntaxHighlightTextView
+2018-04-26 12:46:25,971 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active and passive rule configuration
+2018-04-26 12:46:25,972 [ZAP-daemon] INFO  ExtensionLoader - Initializing Statistics
+2018-04-26 12:46:25,973 [ZAP-daemon] INFO  ExtensionStats - Start recording in memory stats
+2018-04-26 12:46:25,974 [ZAP-daemon] INFO  ExtensionLoader - Initializing Context alert rules filter
+2018-04-26 12:46:25,974 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules
+2018-04-26 12:46:25,975 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules - alpha
+2018-04-26 12:46:25,975 [ZAP-daemon] INFO  ExtensionLoader - Initializing Active Scan Rules - beta
+2018-04-26 12:46:25,975 [ZAP-daemon] INFO  ExtensionLoader - Initializing Translations of the core language files
+2018-04-26 12:46:25,975 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+2018-04-26 12:46:25,976 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows to fuzz HTTP messages.
+2018-04-26 12:46:25,976 [ZAP-daemon] INFO  ExtensionLoader - Initializing The ZAP Getting Started Guide
+2018-04-26 12:46:25,976 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowser
+2018-04-26 12:46:25,976 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserLinux32
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserLinux32
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserLinux64
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserLinux64
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionJxBrowserWindows
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtSelJxBrowserWindows
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing The Online menu links
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive Scan Rules
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing Passive Scan Rules - beta
+2018-04-26 12:46:25,977 [ZAP-daemon] INFO  ExtensionLoader - Initializing Quick Start panel 
+2018-04-26 12:46:25,978 [ZAP-daemon] INFO  ExtensionLoader - Initializing Easy way to replace strings in requests and responses
+2018-04-26 12:46:25,979 [ZAP-daemon] INFO  ExtensionLoader - Initializing ExtensionSaveRawHttpMessage
+2018-04-26 12:46:25,980 [ZAP-daemon] INFO  ExtensionLoader - Initializing Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+2018-04-26 12:46:25,988 [ZAP-daemon] INFO  ExtensionLoader - Initializing Helper extension for Advanced SQL Injection scanner.
+2018-04-26 12:46:25,988 [ZAP-daemon] INFO  ExtensionLoader - Initializing Tips and Tricks
+2018-04-26 12:46:25,988 [ZAP-daemon] INFO  ExtensionLoader - Initializing Allows to fuzz WebSocket messages.
+2018-04-26 12:46:25,989 [ZAP-daemon] WARN  ExtensionAutoUpdate - This ZAP installation is over a year old - its probably very out of date
+2018-04-26 12:46:26,034 [ZAP-daemon] INFO  ExtensionCallback - Started callback server on 0.0.0.0:61003
+2018-04-26 12:46:26,248 [ZAP-daemon] INFO  DaemonBootstrap - ZAP is now listening on 127.0.0.1:60996
+2018-04-26 12:46:28,820 [ZAP-ProxyThread-72] WARN  API - ApiException while handling API request:
+Does Not Exist (does_not_exist) : Default Context
+	at org.zaproxy.zap.utils.ApiUtils.getContextByName(Unknown Source)
+	at org.zaproxy.zap.utils.ApiUtils.getContextByName(Unknown Source)
+	at org.zaproxy.zap.extension.api.ContextAPI.getContext(Unknown Source)
+	at org.zaproxy.zap.extension.api.ContextAPI.handleApiAction(Unknown Source)
+	at org.zaproxy.zap.extension.api.API.handleApiRequest(Unknown Source)
+	at org.parosproxy.paros.core.proxy.ProxyThread.processHttp(Unknown Source)
+	at org.parosproxy.paros.core.proxy.ProxyThread.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-26 12:46:28,884 [ZAP-SpiderInitThread-0] INFO  SpiderThread - Starting spidering scan on Context: Default Context at Thu Apr 26 12:46:28 MST 2018
+2018-04-26 12:46:28,887 [ZAP-SpiderInitThread-0] INFO  Spider - Spider initializing...
+2018-04-26 12:46:28,915 [ZAP-SpiderInitThread-0] INFO  Spider - Starting spider...
+2018-04-26 12:46:29,230 [ZAP-SpiderThreadPool-0-thread-4] INFO  Spider - Spidering process is complete. Shutting down...
+2018-04-26 12:46:29,231 [ZAP-SpiderShutdownThread-0] INFO  SpiderThread - Spider scanning complete: true
+2018-04-26 12:46:32,924 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Caching Retire.js latest repository
+2018-04-26 12:46:33,215 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Loading the latest Retire.js repository
+2018-04-26 12:46:33,241 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - 31 loaded library.
+2018-04-26 12:46:38,348 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "scripts/fb11fb08.main.js"
+2018-04-26 12:46:38,349 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-26 12:46:38,349 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (scripts/fb11fb08.main.js)
+2018-04-26 12:46:38,349 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "fb11fb08.main.js"
+2018-04-26 12:46:38,349 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 12:46:38,350 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (fb11fb08.main.js)
+2018-04-26 12:46:38,351 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching da39a3ee5e6b4b0d3255bfef95601890afd80709 (scripts/fb11fb08.main.js)
+2018-04-26 12:46:38,351 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "[..]"
+2018-04-26 12:46:38,352 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-26 12:46:38,352 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "scripts/fb11fb08.main.js"
+2018-04-26 12:46:38,651 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/idcard/scripts/fb11fb08.main.js"
+2018-04-26 12:46:38,652 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (1 ms) to scan
+2018-04-26 12:46:38,652 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/idcard/scripts/fb11fb08.main.js)
+2018-04-26 12:46:38,652 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "fb11fb08.main.js"
+2018-04-26 12:46:38,652 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 12:46:38,652 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (fb11fb08.main.js)
+2018-04-26 12:46:38,654 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 76b74a8b3dcc45cf1eaccb2aa65163e7abd31098 (/idcard/scripts/fb11fb08.main.js)
+2018-04-26 12:46:38,655 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "function FastClick(a[..]"
+2018-04-26 12:46:38,724 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Pattern match "[^a-z.]jquery:[ ]?"([0-9][0-9.a-z_\\\\-]+)"" !
+2018-04-26 12:46:38,724 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Identify the library jquery (version:1.8.3)
+2018-04-26 12:46:38,725 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.9.0b1
+2018-04-26 12:46:38,725 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.12.0
+2018-04-26 12:46:38,725 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Vulnerability found: jquery below 1.12.0
+2018-04-26 12:46:38,832 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (177 ms) to scan
+2018-04-26 12:46:39,200 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-26 12:46:39,200 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 12:46:39,200 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-26 12:46:39,200 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-26 12:46:39,200 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 12:46:39,200 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-26 12:46:39,201 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 48592ea8c401e8e3dd55b14a7f6282c23892cd4a (/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer)
+2018-04-26 12:46:39,201 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "// Copyright 2012 Go[..]"
+2018-04-26 12:46:39,246 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (45 ms) to scan
+2018-04-26 12:46:39,246 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/gtm.js?id=GTM-WH3CLG&l=aaaie_dataLayer"
+2018-04-26 12:46:39,279 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/analytics.js"
+2018-04-26 12:46:39,279 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 12:46:39,280 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/analytics.js)
+2018-04-26 12:46:39,280 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "analytics.js"
+2018-04-26 12:46:39,280 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 12:46:39,280 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (analytics.js)
+2018-04-26 12:46:39,280 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 1ffcf0f3b6af4c4de9eaf4842879c516ecc29a05 (/analytics.js)
+2018-04-26 12:46:39,280 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "(function(){var $c=f[..]"
+2018-04-26 12:46:39,297 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (17 ms) to scan
+2018-04-26 12:46:39,297 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/analytics.js"
+2018-04-26 12:46:39,303 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing URI: "/plugins/ua/linkid.js"
+2018-04-26 12:46:39,303 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 12:46:39,303 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No path matching the script (/plugins/ua/linkid.js)
+2018-04-26 12:46:39,303 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing filename: "linkid.js"
+2018-04-26 12:46:39,303 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (0 ms) to scan
+2018-04-26 12:46:39,303 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No filename matching the script (linkid.js)
+2018-04-26 12:46:39,303 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No hash matching 3e8d3925b550345123f2cab26568221fd4154f9c (/plugins/ua/linkid.js)
+2018-04-26 12:46:39,303 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - Analysing the content: "(function(){var e=wi[..]"
+2018-04-26 12:46:39,305 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - It took ~0 sec. (2 ms) to scan
+2018-04-26 12:46:39,305 [ZAP-PassiveScanner] INFO  RetireJsScannerPlugin - No content matching the script "/plugins/ua/linkid.js"
+2018-04-26 12:47:00,344 [Thread-34] INFO  ENGINE - dataFileCache commit start
+2018-04-26 12:47:00,354 [Thread-34] INFO  ENGINE - dataFileCache commit end
+2018-04-26 12:47:00,357 [Thread-34] INFO  ENGINE - Database closed
+2018-04-26 12:47:00,464 [Thread-34] INFO  CoreAPI - OWASP ZAP 2.6.0 terminated.
